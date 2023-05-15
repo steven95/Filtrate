@@ -23,5 +23,7 @@
       s.dependency 'JXSegmentedView'
       
       s.dependency 'SnapKit'
-
+      
+      s.dependency 'HandyJSON'
+      
     end
