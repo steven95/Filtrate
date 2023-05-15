@@ -10,6 +10,21 @@ import UIKit
 
 class FiltrateTabview: UIView {
 
+    func JSHexColor(Hex:NSInteger,alpha:CGFloat) -> UIColor {
+        return UIColor(red:((CGFloat)((Hex & 0xFF0000) >> 16))/255.0,green:((CGFloat)((Hex & 0xFF00) >> 8))/255.0,blue:((CGFloat)(Hex & 0xFF))/255.0,alpha:alpha)
+    }
+
+    let JSCREENW = UIScreen.main.bounds.size.width
+
+    let JSCREENH = UIScreen.main.bounds.size.height
+
+    let IPHONE_6_SCREENW = 375.0
+    let RealWidth = JSCREENW < JSCREENH ? JSCREENW : JSCREENH
+    let kRPViewRatio = RealWidth / CGFloat(IPHONE_6_SCREENW)
+    func kRPRealValue(_ value: CGFloat) -> CGFloat {
+        return kRPViewRatio * value
+    }
+    
     var lArray:[FiltrateModel] = []
     private var _leftArray:[FiltrateModel] = []
     public   var  leftArray:[FiltrateModel] {
