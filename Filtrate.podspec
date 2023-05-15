@@ -18,6 +18,10 @@
  
       s.source_files  = "Utility"
       
-      s.dependency 'Masonry,JXSegmentedView,SnapKit'
+      s.dependency 'Masonry'
+      
+      s.dependency 'JXSegmentedView'
+      
+      s.dependency 'SnapKit'
 
     end
