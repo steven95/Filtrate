@@ -8,6 +8,88 @@
 import Foundation
 import HandyJSON
 
+class CustorData:HandyJSON{
+   
+    var minValue:String?
+    var maxValue:String?
+    
+    var max:String?
+    var min:String?
+    
+    var dicDataCode:String?//字典Code
+    var dicDataName:String?//字典名称
+    
+    var name:String?
+    var label:String?
+    
+    var optionCode:String?
+    var optionName:String?
+    var code:String?
+    
+    var children:[CustorData]?
+    var optionVOList:[CustorData]?
+    
+    var iSele:Bool = false
+    var address:String?
+    var text:String?
+    var textWithoutHighlight:String?
+    var value:String?
+    
+    required init() {
+    }
+    
+    func didFinishMapping() {
+        if minValue?.length ?? 0 > 0 {
+            min = minValue
+        }
+        if min?.length ?? 0 > 0 {
+            minValue = min
+        }
+        if maxValue?.length ?? 0 > 0 {
+            max = maxValue
+        }
+        if max?.length ?? 0 > 0 {
+            maxValue = max
+        }
+        if dicDataCode?.length ?? 0 > 0 {
+            code = dicDataCode
+            optionCode = dicDataCode
+        }
+        
+        if optionCode?.length ?? 0 > 0 {
+            code = optionCode
+            dicDataCode = optionCode
+        }
+        if code?.length ?? 0 > 0 {
+            optionCode = code
+            dicDataCode = code
+        }
+        if name?.length ?? 0 > 0 {
+            label = name
+            optionName = name
+            dicDataName = name
+        }
+        
+        if label?.length ?? 0 > 0 {
+            name = label
+            optionName = label
+            dicDataName = label
+        }
+        
+        if optionName?.length ?? 0 > 0 {
+            label = optionName
+            name = optionName
+            dicDataName = optionName
+        }
+        if dicDataName?.length ?? 0 > 0 {
+            name = dicDataName
+            optionName = dicDataName
+            label = dicDataName
+        }
+    }
+    
+}
+
 struct FoldModel: HandyJSON {
     init() {}
     var title : String?
