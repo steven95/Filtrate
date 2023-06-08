@@ -17,12 +17,12 @@ func FSHexColor(Hex:NSInteger,alpha:CGFloat) -> UIColor {
     return UIColor(red:((CGFloat)((Hex & 0xFF0000) >> 16))/255.0,green:((CGFloat)((Hex & 0xFF00) >> 8))/255.0,blue:((CGFloat)(Hex & 0xFF))/255.0,alpha:alpha)
 }
 
-enum RegionType: Int {
+public enum RegionType: Int {
     case normal
     case more
 }
 
-class FiltrateHeaderView: UIView {
+public class FiltrateHeaderView: UIView {
     
     private var _regionType:RegionType = .more
     public   var  regionType:RegionType {
