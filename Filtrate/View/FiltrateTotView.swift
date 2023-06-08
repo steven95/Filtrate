@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class FiltrateTotView: UIView {
+public class FiltrateTotView: UIView {
     
     open var filtrateGroups:NSMutableArray = []
     private var _groups:NSMutableArray = []
