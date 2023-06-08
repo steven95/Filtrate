@@ -16,7 +16,7 @@
 
       s.source       = { :git => "https://github.com/steven95/Filtrate.git", :tag => "#{s.version}" }
  
-      s.source_files  = "Utility"
+      s.source_files  = "Filtrate"
       
       s.dependency 'Masonry'
       
