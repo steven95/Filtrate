@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class EntryTagView: UIView {
+public class EntryTagView: UIView {
     
     private var _type:Int = 1
     public   var  type:Int {
@@ -190,7 +190,7 @@ class EntryTagView: UIView {
     private  var returnSetAction: ( (_ indexPath: IndexPath?,_ groupsele: NSMutableArray?,_ entryModel:EntryModel) -> Void)?
 }
 
-class InformationEntryTagCell: UITableViewCell {
+public class InformationEntryTagCell: UITableViewCell {
     
     open lazy var entryTagView : EntryTagView = {
         let entryTagView = EntryTagView.init()
