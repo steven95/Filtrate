@@ -8,13 +8,13 @@
 import Foundation
 import UIKit
 
-@objc enum BrokerType: Int {
+@objc public enum BrokerType: Int {
      case normal
      case exclusive
  }
 
 
-class MineBrokerFootV: UIView {
+public class MineBrokerFootV: UIView {
     
     lazy var goBtn :GradientButton = {
         var goBtn = GradientButton.init(frame: CGRect.zero)
