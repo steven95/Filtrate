@@ -14,15 +14,6 @@ struct UserCenter {
     var filtrateAlerData:FiltrateAlerModel = FiltrateAlerModel.init()
 }
 
-class FiltrateAlerModel: HandyJSON {
-    required init() {}
-//    var regionList:[CustorData]?
-//    var totalPriceList:[CustorData]? //总价
-//    var unitPriceList:[CustorData]?
-//    var houseTypeList:[CustorData]? //房屋类型（用途）
-//    var houseAgeList:[CustorData]? //房龄
-}
-
 struct FoldModel: HandyJSON {
     init() {}
     var title : String?
