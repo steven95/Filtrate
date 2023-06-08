@@ -29,20 +29,20 @@ struct FoldModel: HandyJSON {
     }
 }
 
-enum iSeleType: Int {
+public enum iSeleType: Int {
     case none
     case cen
     case all
 }
 
-enum FilType: Int {
+public enum FilType: Int {
     case left
     case cen
     case right
     case sort
 }
 
-@objc enum FilTypeAler: Int {
+@objc public enum FilTypeAler: Int {
     case none
     case region
     case price
@@ -55,7 +55,7 @@ enum FilType: Int {
     
 }
 
-class FiltrateModel: NSCopying {
+public class FiltrateModel: NSCopying {
     func copy(with zone: NSZone? = nil) -> Any {
         let model = FiltrateModel()
         model.title = title
@@ -119,14 +119,14 @@ class FiltrateModel: NSCopying {
     }
 }
 
-class CustorModel: HandyJSON {
+public class CustorModel: HandyJSON {
     required init() {}
     var code:String?
     var data:[CustorData]?
     var message:String?
 }
 
-class CustorData:HandyJSON,Equatable{
+public class CustorData:HandyJSON,Equatable{
     static func == (lhs: CustorData, rhs: CustorData) -> Bool {
         return false
     }
@@ -214,7 +214,7 @@ class CustorData:HandyJSON,Equatable{
 }
 
 
-enum entryType: Int {
+public enum entryType: Int {
     case normal
     case image
     case images
@@ -224,21 +224,21 @@ enum entryType: Int {
     case three
 }
 
-enum entryKeyType: Int {
+public enum entryKeyType: Int {
     case `default`
     case decimalPad
     case numandPun
     case numPad
 }
 
-enum State: Int {
+public enum State: Int {
     case `default`
     case decimalPad
     case numandPun
     case numPad
 }
 
-class EntryTag: HandyJSON {
+public class EntryTag: HandyJSON {
     required init() {}
     var title : String?
     var iSele:Bool = false
@@ -279,12 +279,12 @@ class EntryTag: HandyJSON {
     }
 }
 
-enum TagType: Int {
+public enum TagType: Int {
     case normal
     case more
 }
 
-class EntryModel: HandyJSON {
+public class EntryModel: HandyJSON {
     required init() {}
     var title : String?
     var groups : NSMutableArray?
