@@ -10,6 +10,12 @@
                                          blue:((float)(rgbValue & 0xFF))/255.0 alpha:(a)]
 
 #define WEAKSELF __weak __typeof(self)weakSelf = self;
+
+#define RGBA(c,a) [UIColor colorWithRed:((c>>16)&0xFF)/255.0    \
+green:((c>>8)&0xFF)/255.0    \
+blue:(c&0xFF)/255.0         \
+alpha:a]
+
 #import "JuToolsVC.h"
 #import "Masonry.h"
 #import "JuCalendarV.h"
