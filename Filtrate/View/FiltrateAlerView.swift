@@ -10,7 +10,7 @@ import UIKit
 import JXSegmentedView
 import SnapKit
 
-class FiltrateAlerView: UIView {
+public class FiltrateAlerView: UIView {
     
     var filTypeAler:FilTypeAler = FilTypeAler.region
     
