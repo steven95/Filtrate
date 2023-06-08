@@ -62,7 +62,7 @@ class topFiltrateTabview: UIView {
     }
 }
 
-class AddFiltrateTabview: UIView {
+public class AddFiltrateTabview: UIView {
 
     var lArray:[FiltrateModel] = []
     private var _leftArray:[FiltrateModel] = []
