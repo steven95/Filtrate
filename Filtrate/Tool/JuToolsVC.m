@@ -6,7 +6,6 @@
 //
 
 #import "JuToolsVC.h"
-#import "JuYao-Swift.h"
 #import "FFCheckString.h"
 
 #define HexRGBAlpha(rgbValue,a) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
