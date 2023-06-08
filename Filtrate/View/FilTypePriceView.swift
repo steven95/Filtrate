@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class FilTypePriceView: UIView {
+public class FilTypePriceView: UIView {
     
     enum PriceTypeAler: Int {
         case price //无头
