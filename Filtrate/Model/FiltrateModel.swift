@@ -11,7 +11,6 @@ import HandyJSON
 var user = UserCenter()
 struct UserCenter {
     var validRegionData:CustorModel = CustorModel.init()
-    var filtrateAlerData:FiltrateAlerModel = FiltrateAlerModel.init()
 }
 
 struct FoldModel: HandyJSON {
