@@ -26,4 +26,6 @@
       
       s.dependency 'HandyJSON'
       
+      s.resources =  "Utility/Filtrate.bundle"
+      
     end
